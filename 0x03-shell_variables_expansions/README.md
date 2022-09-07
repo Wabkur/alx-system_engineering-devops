@@ -1,1 +1,1 @@
-script that creates a new global variable
+script that counts the number of directories in the PATH
