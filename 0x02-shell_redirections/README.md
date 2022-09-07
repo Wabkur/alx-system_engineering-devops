@@ -1,1 +1,1 @@
-script that displays all users and their home directories, sorted by users
+script that counts the number of directories and sub-directories in the current directory
