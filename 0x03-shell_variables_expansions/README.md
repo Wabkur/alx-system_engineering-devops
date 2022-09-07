@@ -1,1 +1,1 @@
-script that creates an alias
+script that converts a number from base 10 to base 16
