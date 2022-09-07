@@ -1,1 +1,1 @@
- script that displays a confused smiley "(Ôo)
+command that finds all empty files and directories in the current directory and all sub-directories
