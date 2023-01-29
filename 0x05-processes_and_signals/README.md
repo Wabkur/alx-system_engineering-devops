@@ -1,1 +1,1 @@
-Bash script that displays
+Bash script that kills the process 7-highlander
