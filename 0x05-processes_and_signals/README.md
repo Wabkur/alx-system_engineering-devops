@@ -1,1 +1,1 @@
-Bash script that displays its own PID
+Bash script that displays a list of currently running processes
