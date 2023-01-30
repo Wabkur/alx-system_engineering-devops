@@ -1,1 +1,1 @@
-Bash script that loops from 1 to 10
+Bash script that displays numbers from 1 to 20
