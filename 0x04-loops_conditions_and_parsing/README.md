@@ -1,1 +1,1 @@
-Bash script that displays the visitor IP along with the HTTP status code from the Apache log file
+Now that you’ve parsed the Apache log file, let’s sort the data so you can get a better idea of what is going on
