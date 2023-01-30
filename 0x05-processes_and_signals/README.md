@@ -1,1 +1,1 @@
- Bash script
+Programs that are detached from the terminal and running in the background are called daemons or processes, need to be managed. The general minimum set of instructions is start, restart and stop. The most popular way of doing so on Unix system is to use the init scripts
