@@ -1,1 +1,1 @@
-Bash script that gives you information about the school file
+Bash script that displays numbers from 1 to 100
