@@ -1,1 +1,1 @@
-Bash script that displays the content of the file
+Bash script that displays the content of the file etc, passwd, using the while loop + IFS
