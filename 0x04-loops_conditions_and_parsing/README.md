@@ -1,1 +1,1 @@
-Bash script that displays Best School 10 times
+Bash script that displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line
