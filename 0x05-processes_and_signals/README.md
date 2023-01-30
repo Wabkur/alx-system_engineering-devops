@@ -1,1 +1,1 @@
-Bash script that displays a list of currently running processes
+Bash script that displays the PID, along with the process name, of processes whose name contain the word bash
