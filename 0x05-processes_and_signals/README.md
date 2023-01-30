@@ -1,1 +1,1 @@
-C program that creates zombie processes
+Bash script that displays a list of currently running processes
