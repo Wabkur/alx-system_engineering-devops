@@ -1,1 +1,1 @@
-Bash script that displays listening ports
+Bash script that pings an IP address passed as an argument
