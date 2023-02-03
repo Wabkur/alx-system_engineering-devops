@@ -1,1 +1,1 @@
-organized from the lowest level to the highest level
+LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet
