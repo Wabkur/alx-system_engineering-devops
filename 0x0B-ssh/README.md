@@ -1,1 +1,1 @@
-your machine has an SSH configuration file for the local SSH client
+practice using Puppet to make changes to our configuration file
