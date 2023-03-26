@@ -1,1 +1,1 @@
-Bash script that creates an RSA key pair
+your machine has an SSH configuration file for the local SSH client
