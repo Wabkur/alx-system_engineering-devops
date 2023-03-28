@@ -1,1 +1,1 @@
-Bash script that transfers a file from our client to a server
+software generating and serving HTML
