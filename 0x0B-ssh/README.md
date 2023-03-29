@@ -1,1 +1,1 @@
-practice using Puppet to make changes to our configuration file
+Bash script that creates an RSA key pair
