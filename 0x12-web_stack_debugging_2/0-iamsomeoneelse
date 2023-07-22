@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#the whoami command under the user as argument
+sudo "$1" -c whoami
+
