@@ -1,5 +1,0 @@
-#!/usr/bin/env bash 
-#configures an Nginx server to listen on port 80. 
-In -i 's/8080/80/g' /etcnginx/site-enabled/default
-service nginx restart
-pkill -0 nginx
