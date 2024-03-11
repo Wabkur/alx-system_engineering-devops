@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Display lsit of currently running processes
+# Display in user-oriented format
+# Show process hierachy
+ps auxf
