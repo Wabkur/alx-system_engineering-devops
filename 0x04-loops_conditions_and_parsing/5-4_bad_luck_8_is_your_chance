@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#Prints 'bad luck' for w == 4,
+#'good luck' for w == 8
+#'Best School' for rest
+w=1
+while [ $w -lt 11 ];
+do
+	if [ $w == 4 ]; then
+		echo "bad luck"
+	elif [ $w == 8 ]; then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((w++))
+done
