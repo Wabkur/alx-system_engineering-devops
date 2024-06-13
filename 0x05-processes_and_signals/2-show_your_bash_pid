@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
-# This script displays a list of currently running processes
-# displays lines containing the bash word
+# Lists all processes for all users, including those without a TTY
 # shellcheck disable=SC2009
-
-ps auxf | grep bash
+ps auxf | grep "bash"
