@@ -1,6 +1,6 @@
 # script to install nginx using puppet
-
 # Install nginx with pupet
+
 package { 'nginx':
   ensure => installed,
 }
@@ -13,10 +13,10 @@ file_line { 'install':
 }
 
 file { '/var/www/html/index.html';
-  content => 'hello World',
+  content => 'Hello World',
 }
 
 service { 'nginx':
-  ensure  => running.
+  ensure  => running,
   require => package['nginx'],
 }
