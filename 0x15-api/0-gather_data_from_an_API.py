@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-returns info about employee TODO progress
+Returns info about employee TODO progress
 Implemented using recursion
 """
 import re
