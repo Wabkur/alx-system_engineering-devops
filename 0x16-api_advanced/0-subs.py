@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """script that queries subs on a given reddit subreddit"""
 
