@@ -1,17 +1,17 @@
-#!/usr/bin/python3
-"""
-A script that queries subscribers on a given Reddit subreddit.
-"""
 
-import requests
+#!/usr/bin/python3
+"""script that queries subs on a given reddit subreddit"""
 
 
 def number_of_subscribers(subreddit):
-    """Returns the number of subscribers on a given subreddit"""
-    if subreddit is None or type(subreddit) is not str:
+    """Return the number of subs on a given subreddit"""
+    import requests
+
+    sub_info = requests.get("https://www.reddit.com/r/{}/about.json"
+                            .format(subreddit),
+                            headers={"User-Agent": "My-User-Agent"},
+                            allow_redirects=False)
+    if sub_info.status_code >= 300:
         return 0
-    r = requests.get('http://www.reddit.com/r/{}/about.json'.format(subreddit),
-                     headers={'User-Agent': '0x16-api_advanced:project:\
-v1.0.0 (by /u/firdaus_cartoon_jr)'}).json()
-    subs = r.get("data", {}).get("subscribers", 0)
-    return subs
+
+    return sub_info.json().get("data").get("subscribers")
