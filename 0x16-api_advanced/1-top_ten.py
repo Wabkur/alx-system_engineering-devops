@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Module that contain the function top_ten"""
+"""
+Module that contain the function top_ten
+"""
 
 import requests
 
@@ -28,3 +30,4 @@ def top_ten(subreddit):
             for post in hot_posts:
                 if post.get('data') and post.get('data').get('title'):
                     print(post.get('data').get('title'))
+                    
