@@ -16,13 +16,13 @@ def top_ten(subreddit):
 
     payload = {'limit': '10'}
 
-    res = requests.get(api_uri, headers=user_agent,
+    response = requests.get(api_uri, headers=user_agent,
                        params=payload, allow_redirects=False)
 
-    if res.status_code in [302, 404]:
+    if response.status_code in [302, 404]:
         print('None')
     else:
-        res_json = res.json()
+        res_json = response.json()
 
         if res_json.get('data') and res_json.get('data').get('children'):
             hot_posts = res_json.get('data').get('children')
