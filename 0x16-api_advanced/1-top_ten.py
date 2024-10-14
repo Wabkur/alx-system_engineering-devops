@@ -1,21 +1,21 @@
 #!/usr/bin/python3
-""" Function that queries the Reddit API """
+""" queries the Reddit API and returns the number of subscribers """
 import requests
-import sys
 
 
-def top_ten(subreddit):
-    """ Returns: top ten post titles
-        or None if queried subreddit is invalid """
-    headers = {'User-Agent': 'xica369'}
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    parameters = {'limit': 10}
-    response = requests.get(url, headers=headers, allow_redirects=False,
-                            params=parameters)
+def number_of_subscribers(subreddit):
+    """ return number of subscribers of a subredit"""
+    url = f"https://www.reddit.com/r/{subreddit}/about/.json"
+    headers = {'User-Agent': 'my-app/0.0.1'}
 
-    if response.status_code == 200:
-        titles_ = response.json().get('data').get('children')
-        for title_ in titles_:
-            print(title_.get('data').get('title'))
-    else:
-        print(None)
+    try:
+        response = requests.get(url, headers=headers, allow_redirects=False)
+        if response.status_code == 200:
+            all_r = response.json()
+            data = all_r.get('data')
+            sub_count = data.get('subscribers')
+            return sub_count
+        else:
+            return 0
+    except requests.RequestException:
+        return 0
